@@ -24,6 +24,16 @@ if st.sidebar.button("🔍 Check Ollama"):
         st.sidebar.error(" Install Ollama from ollama.com")
 
 # Main app
+def build_prompts(content, style, tone, max_len):
+    source = content[:1500]
+
+    return [
+        f"Make {style} post from this blog, {tone} tone, under {max_len} chars:\n{source}",
+        f"Create engaging {style} from blog excerpt, {tone} style, max {max_len} chars:\n{source}",
+        f"Repurpose blog as {style} post. {tone.title()}, concise {max_len} chars:\n{source}",
+        f"Social {style} adaptation of blog, {tone} voice, {max_len} chars:\n{source}",
+        f"Turn blog into {style} content, {tone} tone, limited to {max_len} chars:\n{source}"
+    ]
 uploaded_file = st.file_uploader("📁 Upload blog (.txt/.md)", type=['txt','md','text'])
 if uploaded_file:
     try:
@@ -44,13 +54,8 @@ if uploaded_file:
     if st.button("✨ Generate 5 Posts", type="primary", use_container_width=True):
         with st.spinner("AI working..."):
             try:
-                prompts = [
-                    f"Make {style} post from this blog, {tone} tone, under {max_len} chars:\n{content[:1500]}",
-                    f"Create engaging {style} from blog excerpt, {tone} style, max {max_len} chars:\n{content[:1500]}",
-                    f"Repurpose blog as {style} post. {tone.title()}, concise {max_len} chars:\n{content[:1500]}",
-                    f"Social {style} adaptation of blog, {tone} voice, {max_len} chars:\n{content[:1500]}",
-                    f"Turn blog into {style} content, {tone} tone, limited to {max_len} chars:\n{content[:1500]}"
-                ]
+                prompts = build_prompts(content, style, tone, max_len)
+                
                 posts = []
                 for p in prompts:
                     resp = ollama.generate(model='llama3.2', prompt=p)
