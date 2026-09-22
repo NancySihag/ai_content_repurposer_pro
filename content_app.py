@@ -5,7 +5,7 @@ import ollama
 import requests
 
 # Suppress Streamlit context warnings permanently
-st.cache_data._suppress_st_warning_in_get_or_create = True
+
 
 st.title("✨ AI Content Repurposer Pro")
 st.markdown("**FREE local AI: Blog → 5 social posts**")
