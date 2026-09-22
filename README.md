@@ -1,35 +1,45 @@
-# AI Content Repurposer ✨
+# AI Content Repurposer Pro ✨
 
-An AI-powered application that transforms existing content into multiple platform-specific formats, helping users repurpose one piece of content into several useful outputs.
+A local AI-powered content repurposing tool built with Python, Streamlit, and Ollama. Upload a blog or article and transform it into platform-specific content such as LinkedIn posts, Twitter threads, Instagram content, email copy, or YouTube content.
+
+The application runs AI generation locally through Ollama, allowing users to experiment with content transformation without relying on a paid cloud AI API.
 
 ## 🚀 Features
 
-- Convert long-form content into shorter formats
-- Generate platform-specific content
-- AI-assisted content transformation
-- Structured output generation
-- Easy-to-use interface
-- Local AI support [only if actually implemented]
-- Customizable content workflow
+- Upload `.txt` and `.md` content files
+- Generate 5 content variations from one source
+- Support multiple content formats:
+  - Twitter Thread
+  - LinkedIn
+  - Instagram
+  - Email
+  - YouTube
+- Choose content tone:
+  - Casual
+  - Professional
+  - Fun
+- Control generated content length
+- Local AI generation using Ollama
+- Ollama availability check
+- Download generated posts as CSV
+- Simple Streamlit interface
+- No paid AI API required
 
-## 🛠️ Tech Stack
-
-- Python
-- [Streamlit/Flask/etc.]
-- [Ollama/OpenAI/etc.]
-- [Other libraries actually used]
-
-## 🔄 Workflow
+## 🧠 How It Works
 
 ```text
-Original Content
-       ↓
-Content Processing
-       ↓
-AI Model
-       ↓
-Content Transformation
-       ↓
-Platform-Specific Outputs
-       ↓
-Final Result
+Upload Blog / Article
+        ↓
+Read Source Content
+        ↓
+Select Platform + Tone + Length
+        ↓
+Generate Prompts
+        ↓
+Ollama + Llama 3.2
+        ↓
+Generate 5 Content Variations
+        ↓
+Display Results
+        ↓
+Download as CSV
