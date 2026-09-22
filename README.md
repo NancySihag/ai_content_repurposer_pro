@@ -1,22 +1,35 @@
 # AI Content Repurposer ✨
 
-## 🚀 Quick Start
+An AI-powered application that transforms existing content into multiple platform-specific formats, helping users repurpose one piece of content into several useful outputs.
 
-1. `./run.sh` (auto model + launch)
-2. Browser: **localhost:8501**
-3. Upload blog.txt → Generate 5 posts → Download!
+## 🚀 Features
 
-**Or manual**:
-```
-pip install -r requirements.txt
-ollama pull llama3.2
-streamlit run app.py
-```
+- Convert long-form content into shorter formats
+- Generate platform-specific content
+- AI-assisted content transformation
+- Structured output generation
+- Easy-to-use interface
+- Local AI support [only if actually implemented]
+- Customizable content workflow
 
-## ✨ Features
-- **Free local AI** (Ollama/llama3.2)
-- Upload .txt/.md blogs
-- 5x social posts (Twitter/LinkedIn/Instagram/etc)
-- Clean terminal, no warnings
+## 🛠️ Tech Stack
 
-**No warnings** - permanently suppressed.
+- Python
+- [Streamlit/Flask/etc.]
+- [Ollama/OpenAI/etc.]
+- [Other libraries actually used]
+
+## 🔄 Workflow
+
+```text
+Original Content
+       ↓
+Content Processing
+       ↓
+AI Model
+       ↓
+Content Transformation
+       ↓
+Platform-Specific Outputs
+       ↓
+Final Result
