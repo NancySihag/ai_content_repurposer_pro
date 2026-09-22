@@ -1,4 +1,4 @@
-# app.py - AI Content Repurposer (Fixed: real Ollama AI, clean terminal)
+# content_app.py - AI Content Repurposer Pro
 import streamlit as st
 import pandas as pd
 import ollama
