@@ -44,6 +44,7 @@ The application follows a simple workflow:
 7. Users can export the generated results.
 
 ## Project Structure
+
 ai_content_repurposer_pro/
 │
 ├── content_app.py
@@ -52,7 +53,8 @@ ai_content_repurposer_pro/
 ├── README.md
 └── requirements.txt
 
-##Installation
+## Installation
+
 **1. Clone the repository**
 git clone https://github.com/NancySihag/ai_content_repurposer_pro.git
 
