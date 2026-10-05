@@ -96,7 +96,7 @@ The application sends the content through the local LLM workflow using Ollama an
 **Output**
 The application generates multiple shorter posts that can be adapted for social media.
 Screenshots: 
-![AI Content Repurposer Pro](screenshots/content-repurposer.png)
+![AI Content Repurposer Pro](screenshots.png)
 
 ## Why I Built This
 I built this project to explore practical applications of local AI models and demonstrate how AI can automate repetitive content-related workflows.
