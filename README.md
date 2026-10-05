@@ -52,7 +52,7 @@ ai_content_repurposer_pro/
 ├── README.md
 └── requirements.txt
 
-Installation
+##Installation
 1. Clone the repository
 git clone https://github.com/NancySihag/ai_content_repurposer_pro.git
 
@@ -63,10 +63,9 @@ cd ai_content_repurposer_pro
 python3 -m venv .venv
 
 4. Activate the virtual environment
-5. macOS / Linux
-source .venv/bin/activate
-
-Windows
+macOS / Linuxsource
+.venv/bin/activate
+Windows:
 .venv\Scripts\activate
 
 5. Install dependencies
