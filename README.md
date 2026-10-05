@@ -53,25 +53,25 @@ ai_content_repurposer_pro/
 └── requirements.txt
 
 ##Installation
-1. Clone the repository
+**1. Clone the repository**
 git clone https://github.com/NancySihag/ai_content_repurposer_pro.git
 
-2. Move into the project directory
+**2. Move into the project directory**
 cd ai_content_repurposer_pro
 
-3. Create a virtual environment
+**3. Create a virtual environment**
 python3 -m venv .venv
 
-4. Activate the virtual environment
+**4. Activate the virtual environment**
 macOS / Linuxsource
 .venv/bin/activate
 Windows:
 .venv\Scripts\activate
 
-5. Install dependencies
+**5. Install dependencies**
 pip install -r requirements.txt
 
-Ollama Setup
+## Ollama Setup
 This project uses Ollama to run the language model locally.
 Install Ollama and make sure the required model is available:
  ollama pull llama3.2
@@ -86,21 +86,22 @@ Run:
  pytest -v
 The tests help verify that important parts of the application work as expected.
 
-Example Workflow
-Input
+## Example Workflow
+**Input**
 A user provides a long-form blog post or article in TXT or Markdown format.
 Processing
 The application sends the content through the local LLM workflow using Ollama and Llama 3.2.
-Output
+**Output**
 The application generates multiple shorter posts that can be adapted for social media.
-Screenshots: ![ai_content_repurposer_pro]/(screenshots.png)
+Screenshots: 
+![AI Content Repurposer Pro](screenshots/content-repurposer.png)
 
-Why I Built This
+## Why I Built This
 I built this project to explore practical applications of local AI models and demonstrate how AI can automate repetitive content-related workflows.
 The project combines Python development, Streamlit interfaces, local LLM integration, content processing, and automated testing.
 
-Key Learning
-Through this project, I practiced:
+## Key Learning
+**Through this project, I practiced**
 - Integrating a local LLM into a Python application
 - Working with Ollama and Llama models
 - Building interactive Streamlit applications
@@ -109,8 +110,8 @@ Through this project, I practiced:
 - Writing automated tests with Pytest
 - Managing projects with Git and GitHub
 
-Future Improvements
-Possible future improvements include:
+## Future Improvements
+**Possible future improvements include:**
 - Additional social media output formats
 - Custom tone and writing-style controls
 - More local LLM model options
@@ -119,16 +120,16 @@ Possible future improvements include:
 - Additional export formats
 - Content history and project management
 
-Author
-Nancy Sihag
+## Author
+**Nancy Sihag**
 BCA Student | Python Developer | AI & Automation | Web Development
 
-GitHub:
+**GitHub:**
 https://github.com/NancySihag
 
-LinkedIn:
+**LinkedIn:**
 https://www.linkedin.com/in/nancy-sihag/
 
-License
+**License**
 This project is intended for learning, experimentation, and portfolio purposes.
 
